@@ -156,11 +156,11 @@ def banner():
  \x1b[1;92m/______  / \x1b[1;93m       \____|__  /\____|__  /\x1b[1;92m/_______ \  
  \x1b[1;92m       \/   \x1b[1;93m              \/         \/         \x1b[1;92m\/    
 \033[92;1m----------------------------------------------------------
-\033[97;1m╠══ \033[92;1mCreator  \033[97;1m: \033[93;1mSanz-Tzy \033[97;1mX \033[93;1mHaris Ganz
-\033[97;1m╠══ \033[92;1mWhatsApp \033[97;1m: \033[93;1m083801xxxxx
-\033[97;1m╠══ \033[92;1mGithub   \033[97;1m: \033[93;1mHttps://github.com/Sanz-Tzy
-\033[97;1m╠══ \033[92;1mFacebook \033[97;1m: \033[93;1mBintang Tzy \033[97;1m[\033[92;1mFollow Me Facebook\033[97;1m]
-\033[97;1m╠══ \033[92;1m Crack Facebook random akan kaya teh hijau
+\033[97;1m╠══\033[92;1mCreator  \033[97;1m: \033[93;1mSanz-Tzy \033[97;1mX \033[93;1mHaris Ganz
+\033[97;1m╠══\033[92;1mWhatsApp \033[97;1m: \033[93;1m083801xxxxx
+\033[97;1m╠══\033[92;1mGithub   \033[97;1m: \033[93;1mHttps://github.com/Sanz-Tzy
+\033[97;1m╠══\033[92;1mFacebook \033[97;1m: \033[93;1mBintang Tzy \033[97;1m[\033[92;1mFollow Me Facebook\033[97;1m]
+\033[97;1m╠══\033[92;1m Crack Facebook random akan kaya teh hijau
 \033[97;1m\033[93;1m---------------------------------------------------------
 """)
 
@@ -239,22 +239,23 @@ def menu():
 		jalan(balmond+m+" Tidak Ada Internet")
 		time.sleep(0.5)
 		exit()
-	print(""+balmond+l+" Active User : "+s+pillow["name"])
-	print(balmond+u+" =>"+h+" Hasil_Op/OK_%s.txt"%(hck))
-	print(balmond+u+" =>"+k+" Hasil_Cp/CP_%s.txt"%(hck))
+	print(""+balmond+l+" \033[97;1m╠══Active User : "+s+pillow["name"])
+	print(balmond+u+" =>"+h+" \033[97;1m╠══Hasil_Op/OK_%s.txt"%(hck))
+	print(balmond+u+" =>"+k+" \033[97;1m╠══Hasil_Cp/CP_%s.txt"%(hck))
 	print(u+line)
-	print(s+"\n{"+m+"01"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
-	print(s+"{"+m+"02"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mFollowers Publik "+u+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]")
-	print(s+"{"+m+"03"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Publik "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"{"+m+"04"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/08 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"{"+m+"05"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/10 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"{"+m+"06"+s+"}"+l+" \33[1;97mSetting U/A \33[1;93m[\33[1;96mUser Agent\33[1;93m] ")
-	print(s+"{"+m+"07"+s+"}"+l+" \33[1;97mCek Opsi \33[1;93mHasil Crack "+s+"{ok/cp}")
-	print(s+"{"+m+"08"+s+"}"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
-	print(s+"{"+m+"09"+s+"}"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
-	print(s+"{"+m+"10"+s+"}"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
-	print(s+"{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
-	sayangku = input("\n"+balmond+l+" \33[1;93m+>>> : \33[1;92m")
+        print(p+"║");time.sleep(0.03)
+	print(s+"\033[97;1m╠══{"+m+"01"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
+	print(s+"\033[97;1m╠══{"+m+"02"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mFollowers Publik "+u+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]")
+	print(s+"\033[97;1m╠══{"+m+"03"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Publik "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"\033[97;1m╠══{"+m+"04"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/08 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"\033[97;1m╠══{"+m+"05"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/10 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"\033[97;1m╠══{"+m+"06"+s+"}"+l+" \33[1;97mSetting U/A \33[1;93m[\33[1;96mUser Agent\33[1;93m] ")
+	print(s+"\033[97;1m╠══{"+m+"07"+s+"}"+l+" \33[1;97mCek Opsi \33[1;93mHasil Crack "+s+"{ok/cp}")
+	print(s+"\033[97;1m╠══{"+m+"08"+s+"}"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
+	print(s+"\033[97;1m╠══{"+m+"09"+s+"}"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
+	print(s+"\033[97;1m╠══{"+m+"10"+s+"}"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
+	print(s+"\033[97;1m╠══{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
+	sayangku = input("\n"+balmond+l+" \033[97;1m╠══\33[1;93m+>>> : \33[1;92m")
 	if sayangku=="1" or sayangku=="01":
 		publik()
 	elif sayangku=="2" or sayangku=="02":
