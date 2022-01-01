@@ -242,7 +242,6 @@ def menu():
 	print(""+balmond+l+" \033[97;1m╠══Active User : "+s+pillow["name"])
 	print(balmond+u+" =>"+h+" \033[97;1m╠══Hasil_Op/OK_%s.txt"%(hck))
 	print(balmond+u+" =>"+k+" \033[97;1m╠══Hasil_Cp/CP_%s.txt"%(hck))
-	print(u+line)
         print(p+"║");time.sleep(0.03)
 	print(s+"\033[97;1m╠══{"+m+"01"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
 	print(s+"\033[97;1m╠══{"+m+"02"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mFollowers Publik "+u+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]")
