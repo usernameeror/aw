@@ -239,7 +239,7 @@ def menu():
 		jalan(balmond+m+" Tidak Ada Internet")
 		time.sleep(0.5)
 		exit()
-	print(""\033[97;1m╠══+balmond+l+" Active User : "+s+pillow["name"])
+	print\033[97;1m╠══(""+balmond+l+" Active User : "+s+pillow["name"])
 	print(\033[97;1m╠══balmond+u+" =>"+h+" Hasil_Op/OK_%s.txt"%(hck))
 	print(\033[97;1m╠══balmond+u+" =>"+k+" Hasil_Cp/CP_%s.txt"%(hck))
 	print(s+"\033[97;1m╠══{"+m+"01"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
