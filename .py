@@ -47,7 +47,7 @@ elif "kuning" in tema:
         b = "\33[1;95m" # ungu
         s = "\33[1;96m" # biru muda
 
-balmond = s+""+m+"\033[97;1m╠══"+s+""
+balmond = s+">"+m+"><"+s+"<"
 
 try:
 	import concurrent.futures
@@ -156,11 +156,11 @@ def banner():
  \x1b[1;92m/______  / \x1b[1;93m       \____|__  /\____|__  /\x1b[1;92m/_______ \  
  \x1b[1;92m       \/   \x1b[1;93m              \/         \/         \x1b[1;92m\/    
 \033[92;1m----------------------------------------------------------
-\033[97;1m╠══\033[92;1mCreator  \033[97;1m: \033[93;1mSanz-Tzy \033[97;1mX \033[93;1mHaris Ganz
-\033[97;1m╠══\033[92;1mWhatsApp \033[97;1m: \033[93;1m083801xxxxx
-\033[97;1m╠══\033[92;1mGithub   \033[97;1m: \033[93;1mHttps://github.com/Sanz-Tzy
-\033[97;1m╠══\033[92;1mFacebook \033[97;1m: \033[93;1mBintang Tzy \033[97;1m[\033[92;1mFollow Me Facebook\033[97;1m]
-\033[97;1m╠══\033[92;1m Crack Facebook random akan kaya teh hijau
+\033[97;1m \033[92;1mCreator  \033[97;1m: \033[93;1mSanz-Tzy \033[97;1mX \033[93;1mHaris Ganz
+\033[97;1m \033[92;1mWhatsApp \033[97;1m: \033[93;1m083801xxxxx
+\033[97;1m \033[92;1mGithub   \033[97;1m: \033[93;1mHttps://github.com/Sanz-Tzy
+\033[97;1m \033[92;1mFacebook \033[97;1m: \033[93;1mBintang Tzy \033[97;1m[\033[92;1mFollow Me Facebook\033[97;1m]
+\033[97;1m\033[92;1m Crack Facebook random akan kaya teh hijau
 \033[97;1m\033[93;1m---------------------------------------------------------
 """)
 
@@ -242,18 +242,19 @@ def menu():
 	print(""+balmond+l+" Active User : "+s+pillow["name"])
 	print(balmond+u+" =>"+h+" Hasil_Op/OK_%s.txt"%(hck))
 	print(balmond+u+" =>"+k+" Hasil_Cp/CP_%s.txt"%(hck))
-	print(s+"\033[97;1m╠══{"+m+"01"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
-	print(s+"\033[97;1m╠══{"+m+"02"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mFollowers Publik "+u+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]")
-	print(s+"\033[97;1m╠══{"+m+"03"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Publik "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"\033[97;1m╠══{"+m+"04"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/08 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"\033[97;1m╠══{"+m+"05"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/10 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"\033[97;1m╠══{"+m+"06"+s+"}"+l+" \33[1;97mSetting U/A \33[1;93m[\33[1;96mUser Agent\33[1;93m] ")
-	print(s+"\033[97;1m╠══{"+m+"07"+s+"}"+l+" \33[1;97mCek Opsi \33[1;93mHasil Crack "+s+"{ok/cp}")
-	print(s+"\033[97;1m╠══{"+m+"08"+s+"}"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
-	print(s+"\033[97;1m╠══{"+m+"09"+s+"}"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
-	print(s+"\033[97;1m╠══{"+m+"10"+s+"}"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
-	print(s+"\033[97;1m╠══{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
-	sayangku = input("\n"+balmond+l+" \033[97;1m\33[1;93m+>>> : \33[1;92m")
+	print(u+line)
+	print(s+"\n{"+m+"01"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
+	print(s+"{"+m+"02"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mFollowers Publik "+u+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]")
+	print(s+"{"+m+"03"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Publik "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"{"+m+"04"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/08 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"{"+m+"05"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/10 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"{"+m+"06"+s+"}"+l+" \33[1;97mSetting U/A \33[1;93m[\33[1;96mUser Agent\33[1;93m] ")
+	print(s+"{"+m+"07"+s+"}"+l+" \33[1;97mCek Opsi \33[1;93mHasil Crack "+s+"{ok/cp}")
+	print(s+"{"+m+"08"+s+"}"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
+	print(s+"{"+m+"09"+s+"}"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
+	print(s+"{"+m+"10"+s+"}"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
+	print(s+"{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
+	sayangku = input("\n"+balmond+l+" \33[1;93m+>>> : \33[1;92m")
 	if sayangku=="1" or sayangku=="01":
 		publik()
 	elif sayangku=="2" or sayangku=="02":
@@ -330,56 +331,54 @@ def sesi_ngentod():
 
 # Info Author
 def info_ngentod():
-	print(p+"║");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+m+" >>"+k+"The Javu Avokados"+m+"<< "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Info Created and Team "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" XNX-CODE Team 2021 "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Created Script "+h+"]");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Sanz-Tzy");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"YumasaaTzy");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Haris-Ganz");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Team Script "+h+"]");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Ang-Cyber");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Faiss Ganss");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Fenzz");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Yuume");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Mbokey Bhizer");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Alpinn");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Jarr-XD");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Indraa");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Hikmatt");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Ditzy");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Rafii-XD");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Denni");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Godong Bodin");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Rahmad_XD");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Donasi Ngabb "+h+"]");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Bagi Yang Mau "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Whatsapp "+k+": "+p+"+6283801923083");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Telepon  "+k+": "+p+"+6283801923083");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Follow Github Me "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"github "+k+": "+p+"https://github.com/YumasaaTzy");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"github "+k+": "+p+"https://github.com/YakuzaaTzy");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"github "+k+": "+p+"https://github.com/Sanz-Tzy");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Follow Facebook Me "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Facebook "+k+": "+p+"Gatau");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Link Fb  "+k+": "+p+"https://www.facebook.com/rendi.gerot.1");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Facebook "+k+": "+p+"Bintang Tzy");time.sleep(0.03)
-	print(p+"║"+m+"• "+h+"Link Fb  "+k+": "+p+"https://www.facebook.com/bintangt.zy.92");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Please Support and Follow We!! "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Please Give A Star On My Github");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Don't Forget To Follow My Facebook And Github "+h+"]");time.sleep(0.03)
-	print(p+"╠══["+h+" ["+k+" Thanks You "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
-	print(p+"╠════════════════════════════════════════════════════");time.sleep(0.03)
-	print(p+"║");time.sleep(0.03)
+	print(p+"["+h+" ["+m+" >>"+k+"The Javu Avokados"+m+"<< "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Info Created and Team "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" XNX-CODE Team 2021 "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Created Script "+h+"]");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Sanz-Tzy");time.sleep(0.03)
+	print(p+""+m+"• "+h+"YumasaaTzy");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Haris-Ganz");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Team Script "+h+"]");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Ang-Cyber");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Faiss Ganss");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Fenzz");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Yuume");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Mbokey Bhizer");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Alpinn");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Jarr-XD");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Indraa");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Hikmatt");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Ditzy");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Rafii-XD");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Denni");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Godong Bodin");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Rahmad_XD");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Donasi Ngabb "+h+"]");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Bagi Yang Mau "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Whatsapp "+k+": "+p+"+6283801923083");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Telepon  "+k+": "+p+"+6283801923083");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Follow Github Me "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
+	print(p+""+m+"• "+h+"github "+k+": "+p+"https://github.com/YumasaaTzy");time.sleep(0.03)
+	print(p+""+m+"• "+h+"github "+k+": "+p+"https://github.com/YakuzaaTzy");time.sleep(0.03)
+	print(p+""+m+"• "+h+"github "+k+": "+p+"https://github.com/Sanz-Tzy");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Follow Facebook Me "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Facebook "+k+": "+p+"Gatau");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Link Fb  "+k+": "+p+"https://www.facebook.com/rendi.gerot.1");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Facebook "+k+": "+p+"Bintang Tzy");time.sleep(0.03)
+	print(p+""+m+"• "+h+"Link Fb  "+k+": "+p+"https://www.facebook.com/bintangt.zy.92");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Please Support and Follow We!! "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Please Give A Star On My Github");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Don't Forget To Follow My Facebook And Github "+h+"]");time.sleep(0.03)
+	print(p+"["+h+" ["+k+" Thanks You "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
+	print(p+"════════════════════════════════════════════════════");time.sleep(0.03)
 #	raw_input (" [ ENTER ]")
 	sayangku = input(p+"╠══["+h+" ["+k+" Tekan Enter Untuk Ke Menu "+h+"] ")
 	menu()
@@ -388,10 +387,9 @@ def info_ngentod():
 # RESULT
 
 def result():
-        print(p+"║");time.sleep(0.03)
-	print(s+"\033[97;1m╠══{"+m+"1"+s+"}"+l+" \33[1;96mCek Result \33[1;93mCP "+k+"{akun sesi}")
-	print(s+"\033[97;1m╠══{"+m+"2"+s+"}"+l+" \33[1;96mCek Result \33[1;92mOK "+k+"\33[1;92m{akun terbuka}")
-	print(s+"\033[97;1m╠══{"+m+"0"+s+"}"+l+" \33[1;91mKembali")
+	print(s+"\n{"+m+"1"+s+"}"+l+" \33[1;96mCek Result \33[1;93mCP "+k+"{akun sesi}")
+	print(s+"{"+m+"2"+s+"}"+l+" \33[1;96mCek Result \33[1;92mOK "+k+"\33[1;92m{akun terbuka}")
+	print(s+"{"+m+"0"+s+"}"+l+" \33[1;91mKembali")
 	pilih = input("\n"+balmond+l+" \33[1;93m+>>> : \33[1;92m")
 	if pilih=="1" or pilih=="01":
 		try:
@@ -401,15 +399,13 @@ def result():
 			time.sleep(0.5)
 			menu()
 		if len(lisaa)==0:
-                        print(p+"║");time.sleep(0.03)
-			print(""+balmond+k+" \33[1;93mHasil CP")
+			print("\n"+balmond+k+" \33[1;93mHasil CP")
 			print(balmond+m+" \33[1;93mTidak Ada Hasil Cp")
 			input(balmond+l+" \33[1;91mKembali")
 			time.sleep(0.5)
 			menu()
 		else:
-                        print(p+"║");time.sleep(0.03)
-			print(""+balmond+l+" \33[1;93mHasil CP")
+			print("\n"+balmond+l+" \33[1;93mHasil CP")
 			for jisoo in lisaa:
 				print(balmond+l+" "+jisoo)
 			marjan = input(balmond+l+"\33[1;93m File : "+h+"")
@@ -421,8 +417,7 @@ def result():
 				menu()
 		print(""+l)
 		bilur = os.system("cd Hasil_Cp && cat %s"%(marjan))
-                print(p+"║");time.sleep(0.03)
-		input(""+balmond+l+" \33[1;91mKembali")
+		input("\n"+balmond+l+" \33[1;91mKembali")
 		time.sleep(0.5)
 		menu()
 	elif pilih=="2" or pilih=="02":
@@ -433,15 +428,13 @@ def result():
 			time.sleep(0.5)
 			menu()
 		if len(lisaa)==0:
-                        print(p+"║");time.sleep(0.03)
-			print(""+balmond+l+" \33[1;92mHasil Ok")
+			print("\n"+balmond+l+" \33[1;92mHasil Ok")
 			print(balmond+m+" \33[1;92mTidak Ada Hasil Ok")
 			input(balmond+l+" \33[1;91mKembali")
 			time.sleep(0.5)
 			menu()
 		else:
-                        print(p+"║");time.sleep(0.03)
-			print(""+balmond+l+" \33[1;92mHasil Ok")
+			print("\n"+balmond+l+" \33[1;92mHasil Ok")
 			for jisoo in lisaa:
 				print(balmond+l+" "+jisoo)
 			marjan = input(balmond+l+" File : "+h+"")
@@ -453,8 +446,7 @@ def result():
 				menu()
 		print(""+l)
 		bilur = os.system("cd Hasil_Ok && cat %s"%(marjan))
-                print(p+"║");time.sleep(0.03)
-		input(""+balmond+l+" \33[1;91mKembali")
+		input("\n"+balmond+l+" \33[1;91mKembali")
 		time.sleep(0.5)
 		menu()
 	elif pilih=="0" or pilih=="00":
