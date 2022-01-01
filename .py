@@ -47,7 +47,7 @@ elif "kuning" in tema:
         b = "\33[1;95m" # ungu
         s = "\33[1;96m" # biru muda
 
-balmond = s+">"+m+"><"+s+"<"
+balmond = s+"(>"+m+"•,•"+s+"<)"
 
 try:
 	import concurrent.futures
