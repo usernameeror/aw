@@ -242,6 +242,7 @@ def menu():
 	print(""+balmond+l+" Active User : "+s+pillow["name"])
 	print(balmond+u+" =>"+h+" Hasil_Op/OK_%s.txt"%(hck))
 	print(balmond+u+" =>"+k+" Hasil_Cp/CP_%s.txt"%(hck))
+        print(u+line)
 	print(s+"\033[97;1m╠══{"+m+"01"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
 	print(s+"\033[97;1m╠══{"+m+"02"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mFollowers Publik "+u+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]")
 	print(s+"\033[97;1m╠══{"+m+"03"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Publik "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
@@ -253,7 +254,7 @@ def menu():
 	print(s+"\033[97;1m╠══{"+m+"09"+s+"}"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
 	print(s+"\033[97;1m╠══{"+m+"10"+s+"}"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
 	print(s+"\033[97;1m╠══{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
-	sayangku = input("\n"+balmond+l+" \033[97;1m╠══\33[1;93m+>>> : \33[1;92m")
+	sayangku = input("\n"+balmond+l+" \033[97;1m\33[1;93m+>>> : \33[1;92m")
 	if sayangku=="1" or sayangku=="01":
 		publik()
 	elif sayangku=="2" or sayangku=="02":
@@ -388,9 +389,10 @@ def info_ngentod():
 # RESULT
 
 def result():
-	print(s+"\n{"+m+"1"+s+"}"+l+" \33[1;96mCek Result \33[1;93mCP "+k+"{akun sesi}")
-	print(s+"{"+m+"2"+s+"}"+l+" \33[1;96mCek Result \33[1;92mOK "+k+"\33[1;92m{akun terbuka}")
-	print(s+"{"+m+"0"+s+"}"+l+" \33[1;91mKembali")
+        print(p+"║");time.sleep(0.03)
+	print(s+"\033[97;1m╠══{"+m+"1"+s+"}"+l+" \33[1;96mCek Result \33[1;93mCP "+k+"{akun sesi}")
+	print(s+"\033[97;1m╠══{"+m+"2"+s+"}"+l+" \33[1;96mCek Result \33[1;92mOK "+k+"\33[1;92m{akun terbuka}")
+	print(s+"\033[97;1m╠══{"+m+"0"+s+"}"+l+" \33[1;91mKembali")
 	pilih = input("\n"+balmond+l+" \33[1;93m+>>> : \33[1;92m")
 	if pilih=="1" or pilih=="01":
 		try:
@@ -400,13 +402,15 @@ def result():
 			time.sleep(0.5)
 			menu()
 		if len(lisaa)==0:
-			print("\n"+balmond+k+" \33[1;93mHasil CP")
+                        print(p+"║");time.sleep(0.03)
+			print(""+balmond+k+" \33[1;93mHasil CP")
 			print(balmond+m+" \33[1;93mTidak Ada Hasil Cp")
 			input(balmond+l+" \33[1;91mKembali")
 			time.sleep(0.5)
 			menu()
 		else:
-			print("\n"+balmond+l+" \33[1;93mHasil CP")
+                        print(p+"║");time.sleep(0.03)
+			print(""+balmond+l+" \33[1;93mHasil CP")
 			for jisoo in lisaa:
 				print(balmond+l+" "+jisoo)
 			marjan = input(balmond+l+"\33[1;93m File : "+h+"")
@@ -418,7 +422,8 @@ def result():
 				menu()
 		print(""+l)
 		bilur = os.system("cd Hasil_Cp && cat %s"%(marjan))
-		input("\n"+balmond+l+" \33[1;91mKembali")
+                print(p+"║");time.sleep(0.03)
+		input(""+balmond+l+" \33[1;91mKembali")
 		time.sleep(0.5)
 		menu()
 	elif pilih=="2" or pilih=="02":
@@ -429,13 +434,15 @@ def result():
 			time.sleep(0.5)
 			menu()
 		if len(lisaa)==0:
-			print("\n"+balmond+l+" \33[1;92mHasil Ok")
+                        print(p+"║");time.sleep(0.03)
+			print(""+balmond+l+" \33[1;92mHasil Ok")
 			print(balmond+m+" \33[1;92mTidak Ada Hasil Ok")
 			input(balmond+l+" \33[1;91mKembali")
 			time.sleep(0.5)
 			menu()
 		else:
-			print("\n"+balmond+l+" \33[1;92mHasil Ok")
+                        print(p+"║");time.sleep(0.03)
+			print(""+balmond+l+" \33[1;92mHasil Ok")
 			for jisoo in lisaa:
 				print(balmond+l+" "+jisoo)
 			marjan = input(balmond+l+" File : "+h+"")
@@ -447,7 +454,8 @@ def result():
 				menu()
 		print(""+l)
 		bilur = os.system("cd Hasil_Ok && cat %s"%(marjan))
-		input("\n"+balmond+l+" \33[1;91mKembali")
+                print(p+"║");time.sleep(0.03)
+		input(""+balmond+l+" \33[1;91mKembali")
 		time.sleep(0.5)
 		menu()
 	elif pilih=="0" or pilih=="00":
