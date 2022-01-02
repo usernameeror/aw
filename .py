@@ -47,7 +47,7 @@ elif "kuning" in tema:
         b = "\33[1;95m" # ungu
         s = "\33[1;96m" # biru muda
 
-balmond = s+"(>"+m+"•,•"+s+"<)"
+balmond = k+"["+u+"•"+k+"]"
 
 try:
 	import concurrent.futures
@@ -243,17 +243,17 @@ def menu():
 	print(balmond+u+" =>"+h+" Hasil_Op/OK_%s.txt"%(hck))
 	print(balmond+u+" =>"+k+" Hasil_Cp/CP_%s.txt"%(hck))
 	print(u+line)
-	print(s+"\n{"+m+"01"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
-	print(s+"{"+m+"02"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mFollowers Publik "+u+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]")
-	print(s+"{"+m+"03"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Publik "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"{"+m+"04"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/08 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"{"+m+"05"+s+"}"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/10 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
-	print(s+"{"+m+"06"+s+"}"+l+" \33[1;97mSetting U/A \33[1;93m[\33[1;96mUser Agent\33[1;93m] ")
-	print(s+"{"+m+"07"+s+"}"+l+" \33[1;97mCek Opsi \33[1;93mHasil Crack "+s+"{ok/cp}")
-	print(s+"{"+m+"08"+s+"}"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
-	print(s+"{"+m+"09"+s+"}"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
-	print(s+"{"+m+"10"+s+"}"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
-	print(s+"{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
+	print(s+"\n\33[1;93m["+m+"\33[1;96m01"+s+"\33[1;93m]"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Atau Publik "+u+"\33[1;93m[ \33[1;96mMAXS 5000\33[1;93m]")
+	print(s+"\33[1;93m["+m+"\33[1;96m02"+s+"\33[1;93m]"+l+" \33[1;97mCrack Dari \33[1;93mFollowers Publik "+u+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]")
+	print(s+"\33[1;93m["+m+"\33[1;96m03"+s+"\33[1;93m]"+l+" \33[1;97mCrack Dari \33[1;93mPertemanan Publik "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"\33[1;93m["+m+"\33[1;96m04"+s+"\33[1;93m]"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/08 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"\33[1;93m["+m+"\33[1;96m05"+s+"\33[1;93m]"+l+" \33[1;97mCrack Dari \33[1;93mAkun Old 04/10 "+s+""+m+"\33[1;93m[\33[1;96mMAXS 5000\33[1;93m]"+s+"")
+	print(s+"\33[1;93m["+m+"\33[1;96m06"+s+"\33[1;93m]"+l+" \33[1;97mSetting U/A \33[1;93m[\33[1;96mUser Agent\33[1;93m] ")
+	print(s+"\33[1;93m["+m+"\33[1;96m07"+s+"\33[1;93m]"+l+" \33[1;97mCek Opsi \33[1;93mHasil Crack "+s+"{ok/cp}")
+	print(s+"\33[1;93m["+m+"\33[1;96m08"+s+"\33[1;93m]"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
+	print(s+"\33[1;93m["+m+"\33[1;96m09"+s+"\33[1;93m]"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
+	print(s+"\33[1;93m["+m+"\33[1;96m10"+s+"\33[1;93m]"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
+	print(s+"\33[1;93m["+m+"\33[1;96m00"+s+"\33[1;93m]"+l+" \33[1;91mLogout")
 	sayangku = input("\n"+balmond+l+" \33[1;93m+>>> : \33[1;92m")
 	if sayangku=="1" or sayangku=="01":
 		publik()
