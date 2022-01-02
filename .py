@@ -92,7 +92,7 @@ id = []
 opsit = []
 sandi = []
 batas = "~                                                    "
-line = "_______________________________________________*"
+line = "--------------------------------------------"
 
 indah = ["Jihan","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"]
 
