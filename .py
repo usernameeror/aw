@@ -253,6 +253,7 @@ def menu():
 	print(s+"{"+m+"08"+s+"}"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
 	print(s+"{"+m+"09"+s+"}"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
 	print(s+"{"+m+"10"+s+"}"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
+	print(s+"{"+m+"11"+s+"}"+l+" \33[1;97mAmbil Data \33[1;93m[\33[1;96mTarget\33[1;93m]")
 	print(s+"{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
 	sayangku = input("\n"+balmond+l+" \33[1;93m+>>> : \33[1;92m")
 	if sayangku=="1" or sayangku=="01":
@@ -275,6 +276,8 @@ def menu():
 		info_ngentod()
 	elif sayangku=="10" or sayangku=="10":
 		sesi_ngentod()
+	elif sayangku=="11" or sayangku=="11":
+		GetData()
 	elif sayangku=="0" or sayangku=="00":
 		os.system("rm -rf token.txt")
 		jalan(balmond+l+" \33[1;93mThanks Udah Pake Sc Gua Bro")
@@ -285,6 +288,167 @@ def menu():
 		time.sleep(0.5)
 		menu()
 	
+	
+# Retas data
+
+def GetData():
+    try:
+        token = open(".token.txt","r").read()
+    except IOError:
+        jalan(balmond+m+" Token Kadaluarsa")
+        time.sleep(0.5)
+        login()
+    try:
+        user = input ( "\033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\033[0;00m Id Target : ")
+        if user == '':
+            print ( " \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Masukan dengan benar bro");GetData()
+#        url = ("https://lookup-id.com/")
+#        if user == "facebook":
+#            payload = {"fburl": user, "check": "Lookup"}
+#        else:
+#            payload = {"fburl": "https://free.facebook.com/" + user, "check": "Lookup"}
+#        halaman = requests.post(url, data = payload).text
+#        sop_ = BeautifulSoup(halaman, "html.parser")
+#        email_ = user
+        idt = user
+        if user == "me":
+            idt = "me"
+        cintaku = requests.get('https://graph.facebook.com/'+idt+'?access_token='+token)
+        x = json.loads(cintaku.text)
+        nmaa = x['name']
+    except (KeyError,IOError):
+        nmaa = ('-')
+    print ('\x1b[1;91m──────────────────────────────────────────────────────────────')
+    print (' \x1b[1;96m  Informasi Akun ');time.sleep(0.03)
+    print ('\n \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m nama lengkap : '+nmaa);time.sleep(0.03)
+    try:
+        ndpn = x['first_name']
+    except (KeyError,IOError):
+        ndpn = ('-')
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m nama depan   : %s'%ndpn);time.sleep(0.03)
+    try:
+        nmbl = x['last_name']
+    except (KeyError,IOError):
+        nmbl = '-'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m nama belakang: %s'%nmbl);time.sleep(0.03)
+    try:
+        hwhs = x['username']
+    except (KeyError,IOError):
+        hwhs = '-'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m username fb  : '+hwhs);time.sleep(0.03)
+    try:
+        ___xxz___jeeck___ = x['id']
+    except (KeyError,IOError):
+        ___xxz___jeeck___ = '?'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m id facebook  : %s'%___xxz___jeeck___);time.sleep(0.03)
+    print ('\x1b[1;91m──────────────────────────────────────────────────────────────')
+    print ('\x1b[1;96m   Data-Data Akun  \n');time.sleep(0.03)
+    try:
+        emai = x['email']
+    except (KeyError,IOError):
+        emai = '-'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m gmail facebook : %s'%emai);time.sleep(0.03)
+    try:
+        nmrr = x['mobile_phone']
+    except (KeyError,IOError):
+        nmrr = '-'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m nomor telepon  : %s'%nmrr);time.sleep(0.03)
+    try:
+        ttll = x['birthday']
+    except (KeyError,IOError,NameError):
+        ttll = '-/-/-'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m tanggal lahir  : %s '%ttll);time.sleep(0.03)
+    try:
+        jenis = x['gender'].replace("female","Betina").replace("male","Jantan")
+    except (KeyError,IOError):
+        jenis = '-'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m jenis kelamin  : %s '%jenis)
+    try:
+        r = requests.get('https://graph.facebook.com/'+idt+'/friends?limit=10000&access_token='+token)
+        z = json.loads(r.text)
+        for i in z["data"]:
+            try:
+               jamet = i["id"]
+               id.append(jamet)
+            except:
+               continue
+    except:
+        pass
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m Total pertemnan: %s'%(len(id)))
+    try:
+        b = requests.get('https://graph.facebook.com/'+idt+'/subscribers?access_token='+token)
+        A = json.loads(b.text)
+        pengikut = A["summary"]["total_count"]
+    except (KeyError, IOError):
+        pengikut = '-'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m Total pengikut : %s'%pengikut)
+    try:
+        lins = x['link']
+    except (KeyError,IOError):
+        lins = '-'
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m link facebook  : %s'%lins);time.sleep(0.03)
+    try:
+        stas = x['relationship_status']
+    except (TypeError,KeyError,IOError):
+        stas = '-'
+    try:
+        dgn = x['significant_other']['name']
+    except (TypeError,KeyError,IOError):
+        dgn = '-'
+    except:
+        pass
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m status hubungan: '+stas+' dengan '+dgn);time.sleep(0.03)
+    try:
+        bioo = x['about']
+    except (KeyError,IOError):
+        bioo = '-'
+    except:
+        pass
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m tentang status : %s'%bioo);time.sleep(0.03)
+    try:
+        dari = x['hometown']['name']
+    except (KeyError,IOError):
+        dari = '-'
+    except:
+        pass
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m kota asal      : %s'%dari)
+    try:
+        tigl = x['location']['name']
+    except (KeyError,IOError):
+        tigl = '-'
+    except:
+        pass
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m tinggal di     : %s'%tigl)
+    try:
+        lopeDela = x["location"]["id"]
+    except (KeyError,IOError):
+        lopeDela = '-'
+    except:
+        pass
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m id lokasi      : %s'%lopeDela)
+    try:
+        tzim = x['timezone']
+    except (KeyError,IOError):
+        tzim = '-'
+    except:
+        pass
+    print (' \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ\x1b[1;97m zona waktu     : %s'%tzim);time.sleep(0.03)
+    try:
+        jam  = x['updated_time'][11:19]
+        uptd = x['updated_time'][:10]
+        year, month, day = uptd.split("-")
+        month = bulan_ttl[month]
+    except (KeyError,IOError):
+        year = '-'
+        month = '-'
+        day = '-'
+    except:
+        pass
+    print (" \033[0;35mʕ\x1b[1;91m ×\x1b[1;95m_\x1b[1;91m×\x1b[1;95mʔ Terakhir Online Tanggal \x1b[1;97m"+uptd+"\x1b[1;95m Jam \x1b[1;97m"+jam)
+    print ('\x1b[1;97m──────────────────────────────────────────────────────────────')
+    input('\n\x1b[1;95m  [ \x1b[1;97mKEMBALI \x1b[1;95m] ')
+    menu()
+
 # Tutor Buka Sesi
 def sesi_ngentod():
 	print(p+""+h+" ["+m+" >>"+k+"   XNX-CODE Team 2021"+m+"<< "+p+"(>•,•<) "+h+"]");time.sleep(0.03)
