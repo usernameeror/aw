@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # SMBF [SANZ MULTI BERUTE FORCE]
-# Recode Taik Kucingijkek
+# Recode Taik Kucing
 # Versi 2.5
 
 import time,os
@@ -253,7 +253,7 @@ def menu():
 	print(s+"{"+m+"08"+s+"}"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
 	print(s+"{"+m+"09"+s+"}"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
 	print(s+"{"+m+"10"+s+"}"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
-       	print(s+"{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
+	print(s+"{"+m+"00"+s+"}"+l+" \33[1;91mLogout")
 	sayangku = input("\n"+balmond+l+" \33[1;93m+>>> : \33[1;92m")
 	if sayangku=="1" or sayangku=="01":
 		publik()
