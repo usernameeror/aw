@@ -253,6 +253,7 @@ def menu():
 	print(s+"\33[1;93m["+m+"\33[1;96m08"+s+"\33[1;93m]"+l+" \33[1;97mCek Result \33[1;93mCrack Account \33[1;96m[\33[1;92mOK\33[1;96m/\33[1;93mCP\33[1;96m]")
 	print(s+"\33[1;93m["+m+"\33[1;96m09"+s+"\33[1;93m]"+l+" \33[1;97mInfo Author \33[1;93m[ \33[1;96mSMBF \33[1;93m]")
 	print(s+"\33[1;93m["+m+"\33[1;96m10"+s+"\33[1;93m]"+l+" \33[1;97mTutor Buka Sesi \33[1;93m[\33[1;96mBy Sanz-Tzy\33[1;93m]")
+        print(s+"\33[1;93m["+m+"\33[1;96m00"+s+"\33[1;93m]"+l+" \33[1;97m logaout")
 	sayangku = input("\n"+balmond+l+" \33[1;93m+>>> : \33[1;92m")
 	if sayangku=="1" or sayangku=="01":
 		publik()
