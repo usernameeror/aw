@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # SMBF [SANZ MULTI BERUTE FORCE]
-# Recode Taik Kucing
+# Recode Taik Kucingijkek
 # Versi 2.5
 
 import time,os
